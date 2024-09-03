@@ -127,9 +127,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'careconnectiiita@gail.com'
-EMAIL_HOST_PASSWORD = 'wehavenotmadeyet'
-DEFAULT_FROM_EMAIL = 'iit2023060@iiita.ac.in'
+EMAIL_HOST_USER = 'careconnectiiita@gmail.com'
+EMAIL_HOST_PASSWORD = 'vigdhylgofndabkc'
+DEFAULT_FROM_EMAIL = 'careconnectiiita@gmail.com'
 
 LOGIN_URL = '/admin/login/'
 LOGIN_REDIRECT_URL = '/'

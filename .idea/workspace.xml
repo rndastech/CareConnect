@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753898a1-b38f-473d-abeb-37f8b8164b14" name="Changes" comment="Initial Version">
+    <list default="true" id="753898a1-b38f-473d-abeb-37f8b8164b14" name="Changes" comment="Login Works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CareConnect/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CareConnect/settings.py" afterDir="false" />
     </list>
@@ -20,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,8 +61,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rites\PycharmProjects\CareConnect\templates\admin\registration" />
       <recent name="C:\Users\rites\PycharmProjects\CareConnect\templates\admin" />
+      <recent name="C:\Users\rites\PycharmProjects\CareConnect\templates\admin\registration" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,7 +109,10 @@
       <updated>1725013398134</updated>
       <workItem from="1725013449916" duration="1206000" />
       <workItem from="1725138286484" duration="5147000" />
-      <workItem from="1725284767102" duration="54000" />
+      <workItem from="1725284767102" duration="647000" />
+      <workItem from="1725306172195" duration="3157000" />
+      <workItem from="1725311011252" duration="109000" />
+      <workItem from="1725354965246" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Version">
       <option name="closed" value="true" />
@@ -118,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725142076238</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Login Works">
+      <option name="closed" value="true" />
+      <created>1725310895686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725310895686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +138,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Version" />
+    <MESSAGE value="Login Works" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login Works" />
   </component>
 </project>
