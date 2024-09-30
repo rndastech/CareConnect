@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="753898a1-b38f-473d-abeb-37f8b8164b14" name="Changes" comment="Login Works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CareConnect/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CareConnect/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CareConnect/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CareConnect/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +47,7 @@
     &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rites/Downloads/RecommendorAlgo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -112,7 +114,16 @@
       <workItem from="1725284767102" duration="647000" />
       <workItem from="1725306172195" duration="3157000" />
       <workItem from="1725311011252" duration="109000" />
-      <workItem from="1725354965246" duration="602000" />
+      <workItem from="1725354965246" duration="1368000" />
+      <workItem from="1725385960443" duration="451000" />
+      <workItem from="1725904711189" duration="986000" />
+      <workItem from="1725913651975" duration="14000" />
+      <workItem from="1725933491426" duration="1500000" />
+      <workItem from="1725935037215" duration="18000" />
+      <workItem from="1725939169487" duration="1877000" />
+      <workItem from="1727151816196" duration="2327000" />
+      <workItem from="1727432461233" duration="33000" />
+      <workItem from="1727531531624" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Version">
       <option name="closed" value="true" />

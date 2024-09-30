@@ -2,6 +2,7 @@
 
 from django.contrib import admin
 from django.contrib.auth.models import User, Group
+from django.contrib.auth.admin import UserAdmin  # Import UserAdmin
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.models import Permission
 
@@ -13,7 +14,8 @@ class CustomAdminSite(admin.AdminSite):
 # Instantiate the custom admin site
 custom_admin_site = CustomAdminSite(name='custom_admin')
 
-custom_admin_site.register(User)
+# Register models with UserAdmin for password hashing
+custom_admin_site.register(User, UserAdmin)
 custom_admin_site.register(Group)
 custom_admin_site.register(Permission)
 custom_admin_site.register(ContentType)

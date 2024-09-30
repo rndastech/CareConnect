@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import ssl
+from django.core.mail import get_connection
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -47,6 +49,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
 ]
 
 ROOT_URLCONF = 'CareConnect.urls'
@@ -130,6 +139,9 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'careconnectiiita@gmail.com'
 EMAIL_HOST_PASSWORD = 'vigdhylgofndabkc'
 DEFAULT_FROM_EMAIL = 'careconnectiiita@gmail.com'
+EMAIL_SSL_CERTIFICATE_PATH = False
 
+def custom_get_connection(**kwargs):
+    return get_connection(ssl.CERT_NONE, **kwargs)
 LOGIN_URL = '/admin/login/'
 LOGIN_REDIRECT_URL = '/'
