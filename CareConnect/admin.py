@@ -5,7 +5,7 @@ from django.contrib.auth.models import User, Group
 from django.contrib.auth.admin import UserAdmin  # Import UserAdmin
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.models import Permission
-
+from feedback.models import Feedback
 class CustomAdminSite(admin.AdminSite):
     site_header = 'CareConnect Admin'
     site_title = 'CareConnect Admin Portal'
@@ -19,3 +19,4 @@ custom_admin_site.register(User, UserAdmin)
 custom_admin_site.register(Group)
 custom_admin_site.register(Permission)
 custom_admin_site.register(ContentType)
+custom_admin_site.register(Feedback)
