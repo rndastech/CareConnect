@@ -17,8 +17,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from CareConnect.admin import custom_admin_site
+from patients.views import patient_detail , patient_update , patient_delete , patient_list , patient_create
+from feedback.views import view_feedback, submit_feedback
 
 urlpatterns = [
+    # path('admin/', admin.site.urls),
     path('admin/', custom_admin_site.urls),
+    path('', include('patients.urls')),  # Include patients app URLs
+    path('feedback/', include('feedback.urls')),
     path('accounts/', include('django.contrib.auth.urls')),  # Note: Not under 'admin/'
+    path('ehr/<int:pk>/', patient_detail, name='patient_detail'),
+    path('patients/<int:pk>/edit/', patient_update, name='patient_update'),
+    path('patients/<int:pk>/delete/', patient_delete, name='patient_delete'),
+    path('patients/new/', patient_create, name='patient_create'),
+    path('patients/', patient_list, name='patient_list'),
+    path('view/', view_feedback, name='view_feedback'),
+    path('submit/', submit_feedback, name='submit_feedback'),
 ]

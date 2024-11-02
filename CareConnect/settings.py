@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'feedback',
+    'patients',  # Register the new patients app
 ]
 
 MIDDLEWARE = [
@@ -144,5 +145,6 @@ EMAIL_SSL_CERTIFICATE_PATH = False
 
 def custom_get_connection(**kwargs):
     return get_connection(ssl.CERT_NONE, **kwargs)
+LOGIN_REDIRECT_URL = '/admin'  # URL to redirect to after successful login
 LOGIN_URL = '/admin/login/'
-LOGIN_REDIRECT_URL = '/'
+# LOGIN_REDIRECT_URL = '/'
