@@ -27,6 +27,8 @@ def submit_feedback(request):
     return render(request, 'feedback/submit_feedback.html', {'form': form})
 
 def view_feedback(request):
-    # Only retrieve feedback submitted by the logged-in user
-    feedback_list = Feedback.objects.filter(user=request.user).order_by('-submitted_at')
+    if request.user.is_superuser:
+        feedback_list = Feedback.objects.all().order_by('-submitted_at')
+    else: 
+        feedback_list = Feedback.objects.filter(user=request.user).order_by('-submitted_at')
     return render(request, 'feedback/view_feedback.html', {'feedback_list': feedback_list})
