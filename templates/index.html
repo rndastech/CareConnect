@@ -1,0 +1,62 @@
+{% extends 'userbase.html' %}
+{% load static %}
+{% block title %}Home - Care Connect{% endblock %}
+
+{% block content %}
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="{% static 'assets/images/i1.jfif' %}" alt="Patient Follow-up">
+    <div class="overlay"><div class="text">Patient Follow-up</div></div>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'assets/images/i2.avif' %}" alt="Health Risk Assessment">
+    <div class="overlay"><div class="text">Health Risk Assessment</div></div>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'assets/images/i3.jfif' %}" alt="Specialist Consultations">
+    <div class="overlay"><div class="text">Specialist Consultations</div></div>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'assets/images/i4.webp' %}" alt="Mental Health Support">
+    <div class="overlay"><div class="text">Mental Health Support</div></div>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'assets/images/doctor.jpg' %}" alt="Mental Wellness">
+    <div class="overlay"><div class="text">Mental Wellness</div></div>
+  </div>
+  <div class="grid-item">
+    <img src="{% static 'assets/images/ai.jfif' %}" alt="Chatbot Assistance">
+    <div class="overlay"><div class="text">Chatbot Assistance</div></div>
+  </div>
+</div>
+
+<section class="blog">
+  <div class="blog-content">
+    <img src="{% static 'assets/images/tele.jfif' %}" alt="Doctor Writing" class="blog-image">
+    <div class="blog-text">
+      <h2>Revolutionizing Healthcare with Telemedicine</h2>
+      <p>Care Connect's telemedicine feature is transforming healthcare by making it more accessible and convenient. With high-quality video consultations, secure document sharing, and real-time communication, patients can connect with healthcare providers from the comfort of their homes. This technology is especially valuable in rural or underserved areas, where it bridges the gap and ensures timely access to care without the need for travel.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <div class="blog-content">
+    <img src="{% static 'assets/images/ehr.jfif' %}" alt="Doctor Writing" class="blog-image">
+    <div class="blog-text">
+      <h2>The Importance of Electronic Health Records (EHR) in Modern Healthcare</h2>
+      <p>Our centralized Electronic Health Record (EHR) system is designed to streamline patient care. By providing a unified platform for storing and accessing patient information, healthcare providers can easily retrieve and update records in real-time. This ensures that medical histories, test results, and treatment plans are always up-to-date and accessible, leading to more informed decision-making.</p>
+    </div>
+  </div>
+</section>
+
+<section class="blog">
+  <div class="blog-content">
+    <img src="{% static 'assets/images/arti.jfif' %}" alt="Doctor Writing" class="blog-image">
+    <div class="blog-text">
+      <h2>AI-Powered Personalized Health Insights</h2>
+      <p>Care Connect uses AI-driven health insights to analyze patient data and provide personalized recommendations. By predicting potential health issues based on medical history and lifestyle, our system enables early intervention, helping patients prevent future problems and improve overall health outcomes.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

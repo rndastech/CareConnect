@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Care Connect - Smart Healthcare Solution</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Care Connect</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#telemedicine">Telemedicine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#virtual-assistant">Virtual Health Assistant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ehr">EHR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#user-management">User Management</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Telemedicine Section -->
+  <section id="telemedicine" class="container mt-5">
+    <h2>Telemedicine</h2>
+    <p>Schedule a virtual consultation with a healthcare provider.</p>
+    <button class="btn btn-primary" onclick="bookAppointment()">Book Appointment</button>
+    <button class="btn btn-secondary" onclick="startConsultation()">Start Consultation</button>
+  </section>
+
+  <!-- Virtual Health Assistant -->
+  <section id="virtual-assistant" class="container mt-5">
+    <h2>Virtual Health Assistant</h2>
+    <p>Chat with our AI-driven health assistant for quick answers to your health-related queries.</p>
+    <button class="btn btn-primary" onclick="startChat()">Start Chat</button>
+    <div id="chatbox" style="display:none;">
+      <input type="text" id="userInput" placeholder="Ask me something...">
+      <button onclick="sendMessage()">Send</button>
+      <div id="chatOutput"></div>
+    </div>
+  </section>
+
+  <!-- EHR Section -->
+  <section id="ehr" class="container mt-5">
+    <h2>Electronic Health Records</h2>
+    <p>Access and update your health records.</p>
+    <button class="btn btn-primary" onclick="viewEHR()">View EHR</button>
+  </section>
+
+  <!-- User Management Section -->
+  <section id="user-management" class="container mt-5">
+    <h2>User Management</h2>
+    <p>Manage user accounts, roles, and access controls.</p>
+    <button class="btn btn-primary" onclick="manageUsers()">Manage Users</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
